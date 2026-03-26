@@ -13,6 +13,19 @@ You can develop the game as any lean project and use `lake build` to build it.
 Moreover, there are multiple ways to run the game while developing it, which are described in
 [Running Games Locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md).
 
+## Solutions
+
+# [Tutorial World](solutions/Tutorial)
+# [Addition World](solutions/Addition_World)
+# [Multiplication World](solutions/Multiplication_World)
+# [Power World](solutions/Power_World)
+# [Implication World](solutions/Implication_World)
+# [Algorithm World](solutions/Algorithm_World)
+# [Advanced Addition World](solutions/Advanced Addition_World)
+# [Inequality World](solutions/Inequality_World)
+# [Advanced Multiplication World](solutions/Advanced_Multiplication_World)
+
+
 ## Contributing
 
 PRs/Issues fixing typos, inconsistencies, missing hints, etc. are very welcome!
