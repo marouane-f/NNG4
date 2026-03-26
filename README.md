@@ -21,7 +21,7 @@ Moreover, there are multiple ways to run the game while developing it, which are
 * [Power World](solutions/Power_World)
 * [Implication World](solutions/Implication_World)
 * [Algorithm World](solutions/Algorithm_World)
-* [Advanced Addition World](solutions/Advanced Addition_World)
+* [Advanced Addition World](solutions/Advanced_Addition_World)
 * [Inequality World](solutions/Inequality_World)
 * [Advanced Multiplication World](solutions/Advanced_Multiplication_World)
 
