@@ -117,7 +117,8 @@ rw [mul_zero] at h
 apply mul_eq_zero at h
 cases h
 tauto
--- i) Case split on c
+
+-- a) Case split on c
 exact h_1
 rw [mul_succ, mul_succ] at h
 apply add_right_cancel at h
@@ -125,38 +126,38 @@ apply hd at h
 rw [h]
 rfl
 
--- ii) Or by first proving that c ≠ 0
--- have result : a * c ≠ 0
--- apply eq_succ_of_ne_zero a at ha
--- cases ha
--- nth_rewrite 1 [h_1] at h
--- contrapose! h
--- rw [h]
--- rw [succ_eq_add_one]
--- rw [succ_eq_add_one]
--- rw [mul_add]
--- rw [add_mul]
--- rw [mul_one]
--- rw [one_mul]
--- rw [← succ_eq_add_one]
--- symm
--- rw [add_comm]
--- rw [succ_add]
--- apply zero_ne_succ
--- apply mul_left_ne_zero a c at result
--- apply eq_succ_of_ne_zero c at result
--- cases result
--- rw [h_1] at h
--- rw [succ_eq_add_one] at h
--- rw [succ_eq_add_one] at h
--- repeat rw [mul_add] at h
--- repeat rw [mul_add] at h
--- rw [mul_one] at h
--- apply add_right_cancel at h
--- apply hd at h
--- rw [h]
--- rw [h_1]
--- rfl
+-- b) Alternatively, by first proving that c ≠ 0
+have result : a * c ≠ 0
+apply eq_succ_of_ne_zero a at ha
+cases ha
+nth_rewrite 1 [h_1] at h
+contrapose! h
+rw [h]
+rw [succ_eq_add_one]
+rw [succ_eq_add_one]
+rw [mul_add]
+rw [add_mul]
+rw [mul_one]
+rw [one_mul]
+rw [← succ_eq_add_one]
+symm
+rw [add_comm]
+rw [succ_add]
+apply zero_ne_succ
+apply mul_left_ne_zero a c at result
+apply eq_succ_of_ne_zero c at result
+cases result
+rw [h_1] at h
+rw [succ_eq_add_one] at h
+rw [succ_eq_add_one] at h
+repeat rw [mul_add] at h
+repeat rw [mul_add] at h
+rw [mul_one] at h
+apply add_right_cancel at h
+apply hd at h
+rw [h]
+rw [h_1]
+rfl
 
 ```
 
